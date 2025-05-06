@@ -1,16 +1,16 @@
-Disease;Symptoms;Affected Animals;Severity;Duration;Curability
-Foot and Mouth Disease;fever, blisters on mouth and feet, lameness, loss of appetite;Cows, Sheep, Goats;High;1-2 weeks;Incurable
-Bovine Tuberculosis;coughing, weight loss, fever, swollen lymph nodes;Cows;High;Months;Incurable
-Brucellosis;fever, joint pain, abortion, weak calves;Cows, Pigs;Moderate;Chronic;Incurable
-Avian Influenza;fever, coughing, respiratory distress, death in birds;Chickens, Ducks;High;1-3 weeks;Incurable
-Bluetongue;fever, swelling, inflamation, lameness;Cows, Sheep;Moderate;3-4 weeks;Incurable
-Mantitis;swelling of udder, heat, pain, reduced milk production;Cows;Low;1-2 weeks;Curable
-African Swine Fever;high fever, red skin lesions, internal bleeding, death in pigs;Pigs;High;Acute;Incurable
-Salmonellosis;fever, diarrhea, abdominal pain, vomiting;Pigs, Cows;Moderate;2-3 days;Curable
-Johnes Disease;weight loss, diarrhea, reduced milk production, arthritis;Cows, Sheep;High;Chronic;Incurable
-Rabies;behavioral changes, drooling, paralysis, death;Dogs, Cows, Horses;High;7-10 days;Incurable
-Lumpy Skin Disease;swelling of skin, fever, lesions, reduced milk production;Cows;Moderate;2-3 weeks;Curable
-Newcastle Disease;respiratory distress, couching, nasal dsicharge, paralysis;Chickens, Ducks, Turkeys;Moderate;1-2 weeks;Incurable
-Fowlpox;fever, skin lesions, swollen eyes, reduced egg production;Chickens, Ducks;Moderate;1-2 weeks;Curable
-Leptospirosis;fever, lethargy, yellowing of eyes, vomiting;Cows, Goats;High;1-2 weeks;Curable
-Anthrax;fever, sudden death, swelling, blackening of tissue;Pigs, Cattle;High;Acute;Incurable
+Disease,Symptoms,Affected Animals,Severity,Duration,Curability
+Foot and Mouth Disease,"Fever, Blisters on mouth and feet, Lameness, Loss of appetite","Cows, Sheep, Goats",High,1-2 weeks,Incurable
+Bovine Tuberculosis,"Coughing, Weight Loss, Fever, Swollen lymph nodes",Cows,High,Months,Incurable
+Brucellosis,"Fever, Joint pain, Abortion, Weak Calves","Cows, Pigs",Moderate,Chronic,Incurable
+Avian Influenza,"Fever, Coughing, Respiratory distress, Death in birds","Chickens, Ducks",High,1-3 weeks,Incurable
+Bluetongue,"Fever, Swelling, Inflamation, Lameness","Cows, Sheep",Moderate,3-4 weeks,Incurable
+Mantitis,"Swelling of udder, Heat, Pain, Reduced milk production",Cows,Low,1-2 weeks,Curable
+African Swine Fever,"High fever, Red skin lesions, Internal bleeding, Death in pigs",Pigs,High,Acute,Incurable
+Salmonellosis,"Fever, diarrhea, Abdominal pain, Vomiting","Pigs, Cows",Moderate,2-3 days,Curable
+Johnes Disease,"Weight loss, Diarrhea, Reduced milk production, Arthritis","Cows, Sheep",High,Chronic,Incurable
+Rabies,"Behavioral changes, Drooling, Paralysis, Death","Dogs, Cows, Horses",High,7-10 days,Incurable
+Lumpy Skin Disease,"Swelling of skin, Fever, Lesions, Reduced milk production",Cows,Moderate,2-3 weeks,Curable
+Newcastle Disease,"Respiratory distress, Couching, Nasal Dsicharge, Paralysis","Chickens, Ducks, Turkeys",Moderate,1-2 weeks,Incurable
+Fowlpox,"Fever, Skin lesions, Swollen eyes, Reduced egg production","Chickens, Ducks",Moderate,1-2 weeks,Curable
+Leptospirosis,"Fever, Lethargy, Yellowing of eyes, Vomiting","Cows, Goats",High,1-2 weeks,Curable
+Anthrax,"Fever, Sudden death, Swelling, Blackening of tissue","Pigs, Cattle",High,Acute,Incurable

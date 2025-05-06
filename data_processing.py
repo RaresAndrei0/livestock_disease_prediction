@@ -1,44 +1,23 @@
 import pandas as pd
+from sklearn.preprocessing import LabelEncoder, MultiLabelBinarizer
 
-data = {
-    'Disease': [
-        'Foot and Mouth Disease', 'Bovine Tuberculosis', 'Brucellosis', 'Avian Influenza', 'Bluetongue', 'Mantitis','African Swine Fever', 'Salmonellosis',
-        'Johnes Disease', 'Rabies', 'Lumpy Skin Disease', 'Newcastle Disease', 'Fowlpox', 'Leptospirosis', 'Anthrax'
-        ],
-    
-    'Symptoms': [
-        'Fever, Blisters on mouth and feet, Lameness, Loss of appetite', 'Coughing, Weight Loss, Fever, Swollen lymph nodes', 'Fever, Joint pain, Abortion, Weak Calves',
-        'Fever, Coughing, Respiratory distress, Death in birds', 'Fever, Swelling, Inflamation, Lameness', 'Swelling of udder, Heat, Pain, Reduced milk production', 'High fever, Red skin lesions, Internal bleeding, Death in pigs',
-        'Fever, diarrhea, Abdominal pain, Vomiting', 'Weight loss, Diarrhea, Reduced milk production, Arthritis', 'Behavioral changes, Drooling, Paralysis, Death', 'Swelling of skin, Fever, Lesions, Reduced milk production',
-        'Respiratory distress, Couching, Nasal Dsicharge, Paralysis', 'Fever, Skin lesions, Swollen eyes, Reduced egg production', 'Fever, Lethargy, Yellowing of eyes, Vomiting', 'Fever, Sudden death, Swelling, Blackening of tissue'
-        ],
+def load_and_process_data():
+    df = pd.read_csv('livestock_disease.csv')
+    df['Symptoms'] = df['Symptoms'].str.lower().str.split(',')
 
-    'Affected Animals': [
-        'Cows, Sheep, Goats', 'Cows', 'Cows, Pigs', 'Chickens, Ducks', 'Cows, Sheep', 'Cows', 'Pigs', 'Pigs, Cows',
-        'Cows, Sheep', 'Dogs, Cows, Horses', 'Cows', 'Chickens, Ducks, Turkeys', 'Chickens, Ducks', 'Cows, Goats', 'Pigs, Cattle'
-        ],
-    
-    'Severity': [
-        'High', 'High', 'Moderate', 'High', 'Moderate', 'Low', 'High', 'Moderate', 'High', 'High', 
-        'Moderate', 'Moderate', 'Moderate', 'High', 'High'
-        ],
-    
-    'Duration':[
-        '1-2 weeks', 'Months', 'Chronic', '1-3 weeks', '3-4 weeks', '1-2 weeks', 'Acute', '2-3 days', 'Chronic',
-        '7-10 days', '2-3 weeks', '1-2 weeks', '1-2 weeks', '1-2 weeks', 'Acute'
-        ],
+    mlb = MultiLabelBinarizer()
+    symptoms_encoded = pd.DataFrame(mlb.fit_transform(df['Symptoms']),columns=mlb.classes_)
+    enc = LabelEncoder()
 
-    'Curability':[
-        'Incurable', 'Incurable', 'Incurable', 'Incurable', 'Incurable', 'Curable', 'Incurable', 'Curable', 'Incurable', 'Incurable',
-        'Curable', 'Incurable', 'Curable', 'Curable', 'Incurable'
-    ]
-}
+    df['Severity'] = enc.fit_transform(df['Severity'])
+    df['Curability'] = enc.fit_transform(df['Curability'])
+    df['Affected Animals'] = df['Affected Animals'].astype('category').cat.codes
+    df['Duration'] = df['Duration'].astype('category').cat.codes
 
-df = pd.DataFrame(data)
+    df['Disease'] = df['Disease'].astype('category')
+    y = df['Disease'].cat.codes
+    disease_classes = dict(enumerate(df['Disease'].cat.categories))
 
-df['Symptoms'] = df['Symptoms'].str.lower().str.replace(r'\s+', ' ', regex=True)
+    X = pd.concat([symptoms_encoded, df[['Severity', 'Curability', 'Affected Animals', 'Duration']]], axis=1)
 
-
-df.to_csv('livestock_disease.csv', index=False, sep=',')
-
-df.head()
+    return X, y, disease_classes
