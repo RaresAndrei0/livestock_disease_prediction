@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder, MultiLabelBinarizer
 
 def load_and_process_data():
-    df = pd.read_csv('livestock_disease.csv')
+    df = pd.read_csv('livestock_diseases_150.csv')
     df['Symptoms'] = df['Symptoms'].str.lower().str.split(',')
 
     mlb = MultiLabelBinarizer()

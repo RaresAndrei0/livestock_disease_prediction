@@ -1,0 +1,151 @@
+Disease,Symptoms,Affected Animals,Severity,Duration,Curability
+Foot and Mouth Disease Variant 1,"Fever, Coughing, Diarrhea","Cows, Pigs",Low,1-2 days,Curable
+Bovine Tuberculosis Variant 1,"Lameness, Blisters, Weight Loss","Sheep, Goats",Moderate,1-2 weeks,Incurable
+Brucellosis Variant 1,"Abortion, Lesions, Swelling","Chickens, Ducks",High,3-4 weeks,Curable
+Avian Influenza Variant 1,"Drooling, Paralysis, Vomiting","Dogs, Cats",Low,Chronic,Incurable
+Bluetongue Variant 1,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Moderate,Acute,Curable
+Mastitis Variant 1,"Fever, Coughing, Diarrhea","Cows, Pigs",High,Months,Incurable
+African Swine Fever Variant 1,"Lameness, Blisters, Weight Loss","Sheep, Goats",Low,1-2 days,Curable
+Salmonellosis Variant 1,"Abortion, Lesions, Swelling","Chickens, Ducks",Moderate,1-2 weeks,Incurable
+Johne's Disease Variant 1,"Drooling, Paralysis, Vomiting","Dogs, Cats",High,3-4 weeks,Curable
+Rabies Variant 1,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Low,Chronic,Incurable
+Lumpy Skin Disease Variant 1,"Fever, Coughing, Diarrhea","Cows, Pigs",Moderate,Acute,Curable
+Newcastle Disease Variant 1,"Lameness, Blisters, Weight Loss","Sheep, Goats",High,Months,Incurable
+Fowlpox Variant 1,"Abortion, Lesions, Swelling","Chickens, Ducks",Low,1-2 days,Curable
+Leptospirosis Variant 1,"Drooling, Paralysis, Vomiting","Dogs, Cats",Moderate,1-2 weeks,Incurable
+Anthrax Variant 1,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",High,3-4 weeks,Curable
+Swine Dysentery Variant 1,"Fever, Coughing, Diarrhea","Cows, Pigs",Low,Chronic,Incurable
+Porcine Parvovirus Variant 1,"Lameness, Blisters, Weight Loss","Sheep, Goats",Moderate,Acute,Curable
+Equine Influenza Variant 1,"Abortion, Lesions, Swelling","Chickens, Ducks",High,Months,Incurable
+Equine Herpesvirus Variant 1,"Drooling, Paralysis, Vomiting","Dogs, Cats",Low,1-2 days,Curable
+Canine Distemper Variant 1,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Moderate,1-2 weeks,Incurable
+Canine Parvovirus Variant 1,"Fever, Coughing, Diarrhea","Cows, Pigs",High,3-4 weeks,Curable
+Kennel Cough Variant 1,"Lameness, Blisters, Weight Loss","Sheep, Goats",Low,Chronic,Incurable
+Feline Panleukopenia Variant 1,"Abortion, Lesions, Swelling","Chickens, Ducks",Moderate,Acute,Curable
+Feline Leukemia Variant 1,"Drooling, Paralysis, Vomiting","Dogs, Cats",High,Months,Incurable
+Feline Immunodeficiency Virus Variant 1,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Low,1-2 days,Curable
+Mycoplasmosis Variant 1,"Fever, Coughing, Diarrhea","Cows, Pigs",Moderate,1-2 weeks,Incurable
+Contagious Caprine Pleuropneumonia Variant 1,"Lameness, Blisters, Weight Loss","Sheep, Goats",High,3-4 weeks,Curable
+Peste des Petits Ruminants Variant 1,"Abortion, Lesions, Swelling","Chickens, Ducks",Low,Chronic,Incurable
+Actinobacillosis Variant 1,"Drooling, Paralysis, Vomiting","Dogs, Cats",Moderate,Acute,Curable
+Botulism Variant 1,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",High,Months,Incurable
+Foot and Mouth Disease Variant 2,"Fever, Coughing, Diarrhea","Cows, Pigs",Low,1-2 days,Curable
+Bovine Tuberculosis Variant 2,"Lameness, Blisters, Weight Loss","Sheep, Goats",Moderate,1-2 weeks,Incurable
+Brucellosis Variant 2,"Abortion, Lesions, Swelling","Chickens, Ducks",High,3-4 weeks,Curable
+Avian Influenza Variant 2,"Drooling, Paralysis, Vomiting","Dogs, Cats",Low,Chronic,Incurable
+Bluetongue Variant 2,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Moderate,Acute,Curable
+Mastitis Variant 2,"Fever, Coughing, Diarrhea","Cows, Pigs",High,Months,Incurable
+African Swine Fever Variant 2,"Lameness, Blisters, Weight Loss","Sheep, Goats",Low,1-2 days,Curable
+Salmonellosis Variant 2,"Abortion, Lesions, Swelling","Chickens, Ducks",Moderate,1-2 weeks,Incurable
+Johne's Disease Variant 2,"Drooling, Paralysis, Vomiting","Dogs, Cats",High,3-4 weeks,Curable
+Rabies Variant 2,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Low,Chronic,Incurable
+Lumpy Skin Disease Variant 2,"Fever, Coughing, Diarrhea","Cows, Pigs",Moderate,Acute,Curable
+Newcastle Disease Variant 2,"Lameness, Blisters, Weight Loss","Sheep, Goats",High,Months,Incurable
+Fowlpox Variant 2,"Abortion, Lesions, Swelling","Chickens, Ducks",Low,1-2 days,Curable
+Leptospirosis Variant 2,"Drooling, Paralysis, Vomiting","Dogs, Cats",Moderate,1-2 weeks,Incurable
+Anthrax Variant 2,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",High,3-4 weeks,Curable
+Swine Dysentery Variant 2,"Fever, Coughing, Diarrhea","Cows, Pigs",Low,Chronic,Incurable
+Porcine Parvovirus Variant 2,"Lameness, Blisters, Weight Loss","Sheep, Goats",Moderate,Acute,Curable
+Equine Influenza Variant 2,"Abortion, Lesions, Swelling","Chickens, Ducks",High,Months,Incurable
+Equine Herpesvirus Variant 2,"Drooling, Paralysis, Vomiting","Dogs, Cats",Low,1-2 days,Curable
+Canine Distemper Variant 2,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Moderate,1-2 weeks,Incurable
+Canine Parvovirus Variant 2,"Fever, Coughing, Diarrhea","Cows, Pigs",High,3-4 weeks,Curable
+Kennel Cough Variant 2,"Lameness, Blisters, Weight Loss","Sheep, Goats",Low,Chronic,Incurable
+Feline Panleukopenia Variant 2,"Abortion, Lesions, Swelling","Chickens, Ducks",Moderate,Acute,Curable
+Feline Leukemia Variant 2,"Drooling, Paralysis, Vomiting","Dogs, Cats",High,Months,Incurable
+Feline Immunodeficiency Virus Variant 2,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Low,1-2 days,Curable
+Mycoplasmosis Variant 2,"Fever, Coughing, Diarrhea","Cows, Pigs",Moderate,1-2 weeks,Incurable
+Contagious Caprine Pleuropneumonia Variant 2,"Lameness, Blisters, Weight Loss","Sheep, Goats",High,3-4 weeks,Curable
+Peste des Petits Ruminants Variant 2,"Abortion, Lesions, Swelling","Chickens, Ducks",Low,Chronic,Incurable
+Actinobacillosis Variant 2,"Drooling, Paralysis, Vomiting","Dogs, Cats",Moderate,Acute,Curable
+Botulism Variant 2,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",High,Months,Incurable
+Foot and Mouth Disease Variant 3,"Fever, Coughing, Diarrhea","Cows, Pigs",Low,1-2 days,Curable
+Bovine Tuberculosis Variant 3,"Lameness, Blisters, Weight Loss","Sheep, Goats",Moderate,1-2 weeks,Incurable
+Brucellosis Variant 3,"Abortion, Lesions, Swelling","Chickens, Ducks",High,3-4 weeks,Curable
+Avian Influenza Variant 3,"Drooling, Paralysis, Vomiting","Dogs, Cats",Low,Chronic,Incurable
+Bluetongue Variant 3,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Moderate,Acute,Curable
+Mastitis Variant 3,"Fever, Coughing, Diarrhea","Cows, Pigs",High,Months,Incurable
+African Swine Fever Variant 3,"Lameness, Blisters, Weight Loss","Sheep, Goats",Low,1-2 days,Curable
+Salmonellosis Variant 3,"Abortion, Lesions, Swelling","Chickens, Ducks",Moderate,1-2 weeks,Incurable
+Johne's Disease Variant 3,"Drooling, Paralysis, Vomiting","Dogs, Cats",High,3-4 weeks,Curable
+Rabies Variant 3,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Low,Chronic,Incurable
+Lumpy Skin Disease Variant 3,"Fever, Coughing, Diarrhea","Cows, Pigs",Moderate,Acute,Curable
+Newcastle Disease Variant 3,"Lameness, Blisters, Weight Loss","Sheep, Goats",High,Months,Incurable
+Fowlpox Variant 3,"Abortion, Lesions, Swelling","Chickens, Ducks",Low,1-2 days,Curable
+Leptospirosis Variant 3,"Drooling, Paralysis, Vomiting","Dogs, Cats",Moderate,1-2 weeks,Incurable
+Anthrax Variant 3,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",High,3-4 weeks,Curable
+Swine Dysentery Variant 3,"Fever, Coughing, Diarrhea","Cows, Pigs",Low,Chronic,Incurable
+Porcine Parvovirus Variant 3,"Lameness, Blisters, Weight Loss","Sheep, Goats",Moderate,Acute,Curable
+Equine Influenza Variant 3,"Abortion, Lesions, Swelling","Chickens, Ducks",High,Months,Incurable
+Equine Herpesvirus Variant 3,"Drooling, Paralysis, Vomiting","Dogs, Cats",Low,1-2 days,Curable
+Canine Distemper Variant 3,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Moderate,1-2 weeks,Incurable
+Canine Parvovirus Variant 3,"Fever, Coughing, Diarrhea","Cows, Pigs",High,3-4 weeks,Curable
+Kennel Cough Variant 3,"Lameness, Blisters, Weight Loss","Sheep, Goats",Low,Chronic,Incurable
+Feline Panleukopenia Variant 3,"Abortion, Lesions, Swelling","Chickens, Ducks",Moderate,Acute,Curable
+Feline Leukemia Variant 3,"Drooling, Paralysis, Vomiting","Dogs, Cats",High,Months,Incurable
+Feline Immunodeficiency Virus Variant 3,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Low,1-2 days,Curable
+Mycoplasmosis Variant 3,"Fever, Coughing, Diarrhea","Cows, Pigs",Moderate,1-2 weeks,Incurable
+Contagious Caprine Pleuropneumonia Variant 3,"Lameness, Blisters, Weight Loss","Sheep, Goats",High,3-4 weeks,Curable
+Peste des Petits Ruminants Variant 3,"Abortion, Lesions, Swelling","Chickens, Ducks",Low,Chronic,Incurable
+Actinobacillosis Variant 3,"Drooling, Paralysis, Vomiting","Dogs, Cats",Moderate,Acute,Curable
+Botulism Variant 3,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",High,Months,Incurable
+Foot and Mouth Disease Variant 4,"Fever, Coughing, Diarrhea","Cows, Pigs",Low,1-2 days,Curable
+Bovine Tuberculosis Variant 4,"Lameness, Blisters, Weight Loss","Sheep, Goats",Moderate,1-2 weeks,Incurable
+Brucellosis Variant 4,"Abortion, Lesions, Swelling","Chickens, Ducks",High,3-4 weeks,Curable
+Avian Influenza Variant 4,"Drooling, Paralysis, Vomiting","Dogs, Cats",Low,Chronic,Incurable
+Bluetongue Variant 4,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Moderate,Acute,Curable
+Mastitis Variant 4,"Fever, Coughing, Diarrhea","Cows, Pigs",High,Months,Incurable
+African Swine Fever Variant 4,"Lameness, Blisters, Weight Loss","Sheep, Goats",Low,1-2 days,Curable
+Salmonellosis Variant 4,"Abortion, Lesions, Swelling","Chickens, Ducks",Moderate,1-2 weeks,Incurable
+Johne's Disease Variant 4,"Drooling, Paralysis, Vomiting","Dogs, Cats",High,3-4 weeks,Curable
+Rabies Variant 4,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Low,Chronic,Incurable
+Lumpy Skin Disease Variant 4,"Fever, Coughing, Diarrhea","Cows, Pigs",Moderate,Acute,Curable
+Newcastle Disease Variant 4,"Lameness, Blisters, Weight Loss","Sheep, Goats",High,Months,Incurable
+Fowlpox Variant 4,"Abortion, Lesions, Swelling","Chickens, Ducks",Low,1-2 days,Curable
+Leptospirosis Variant 4,"Drooling, Paralysis, Vomiting","Dogs, Cats",Moderate,1-2 weeks,Incurable
+Anthrax Variant 4,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",High,3-4 weeks,Curable
+Swine Dysentery Variant 4,"Fever, Coughing, Diarrhea","Cows, Pigs",Low,Chronic,Incurable
+Porcine Parvovirus Variant 4,"Lameness, Blisters, Weight Loss","Sheep, Goats",Moderate,Acute,Curable
+Equine Influenza Variant 4,"Abortion, Lesions, Swelling","Chickens, Ducks",High,Months,Incurable
+Equine Herpesvirus Variant 4,"Drooling, Paralysis, Vomiting","Dogs, Cats",Low,1-2 days,Curable
+Canine Distemper Variant 4,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Moderate,1-2 weeks,Incurable
+Canine Parvovirus Variant 4,"Fever, Coughing, Diarrhea","Cows, Pigs",High,3-4 weeks,Curable
+Kennel Cough Variant 4,"Lameness, Blisters, Weight Loss","Sheep, Goats",Low,Chronic,Incurable
+Feline Panleukopenia Variant 4,"Abortion, Lesions, Swelling","Chickens, Ducks",Moderate,Acute,Curable
+Feline Leukemia Variant 4,"Drooling, Paralysis, Vomiting","Dogs, Cats",High,Months,Incurable
+Feline Immunodeficiency Virus Variant 4,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Low,1-2 days,Curable
+Mycoplasmosis Variant 4,"Fever, Coughing, Diarrhea","Cows, Pigs",Moderate,1-2 weeks,Incurable
+Contagious Caprine Pleuropneumonia Variant 4,"Lameness, Blisters, Weight Loss","Sheep, Goats",High,3-4 weeks,Curable
+Peste des Petits Ruminants Variant 4,"Abortion, Lesions, Swelling","Chickens, Ducks",Low,Chronic,Incurable
+Actinobacillosis Variant 4,"Drooling, Paralysis, Vomiting","Dogs, Cats",Moderate,Acute,Curable
+Botulism Variant 4,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",High,Months,Incurable
+Foot and Mouth Disease Variant 5,"Fever, Coughing, Diarrhea","Cows, Pigs",Low,1-2 days,Curable
+Bovine Tuberculosis Variant 5,"Lameness, Blisters, Weight Loss","Sheep, Goats",Moderate,1-2 weeks,Incurable
+Brucellosis Variant 5,"Abortion, Lesions, Swelling","Chickens, Ducks",High,3-4 weeks,Curable
+Avian Influenza Variant 5,"Drooling, Paralysis, Vomiting","Dogs, Cats",Low,Chronic,Incurable
+Bluetongue Variant 5,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Moderate,Acute,Curable
+Mastitis Variant 5,"Fever, Coughing, Diarrhea","Cows, Pigs",High,Months,Incurable
+African Swine Fever Variant 5,"Lameness, Blisters, Weight Loss","Sheep, Goats",Low,1-2 days,Curable
+Salmonellosis Variant 5,"Abortion, Lesions, Swelling","Chickens, Ducks",Moderate,1-2 weeks,Incurable
+Johne's Disease Variant 5,"Drooling, Paralysis, Vomiting","Dogs, Cats",High,3-4 weeks,Curable
+Rabies Variant 5,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Low,Chronic,Incurable
+Lumpy Skin Disease Variant 5,"Fever, Coughing, Diarrhea","Cows, Pigs",Moderate,Acute,Curable
+Newcastle Disease Variant 5,"Lameness, Blisters, Weight Loss","Sheep, Goats",High,Months,Incurable
+Fowlpox Variant 5,"Abortion, Lesions, Swelling","Chickens, Ducks",Low,1-2 days,Curable
+Leptospirosis Variant 5,"Drooling, Paralysis, Vomiting","Dogs, Cats",Moderate,1-2 weeks,Incurable
+Anthrax Variant 5,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",High,3-4 weeks,Curable
+Swine Dysentery Variant 5,"Fever, Coughing, Diarrhea","Cows, Pigs",Low,Chronic,Incurable
+Porcine Parvovirus Variant 5,"Lameness, Blisters, Weight Loss","Sheep, Goats",Moderate,Acute,Curable
+Equine Influenza Variant 5,"Abortion, Lesions, Swelling","Chickens, Ducks",High,Months,Incurable
+Equine Herpesvirus Variant 5,"Drooling, Paralysis, Vomiting","Dogs, Cats",Low,1-2 days,Curable
+Canine Distemper Variant 5,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Moderate,1-2 weeks,Incurable
+Canine Parvovirus Variant 5,"Fever, Coughing, Diarrhea","Cows, Pigs",High,3-4 weeks,Curable
+Kennel Cough Variant 5,"Lameness, Blisters, Weight Loss","Sheep, Goats",Low,Chronic,Incurable
+Feline Panleukopenia Variant 5,"Abortion, Lesions, Swelling","Chickens, Ducks",Moderate,Acute,Curable
+Feline Leukemia Variant 5,"Drooling, Paralysis, Vomiting","Dogs, Cats",High,Months,Incurable
+Feline Immunodeficiency Virus Variant 5,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",Low,1-2 days,Curable
+Mycoplasmosis Variant 5,"Fever, Coughing, Diarrhea","Cows, Pigs",Moderate,1-2 weeks,Incurable
+Contagious Caprine Pleuropneumonia Variant 5,"Lameness, Blisters, Weight Loss","Sheep, Goats",High,3-4 weeks,Curable
+Peste des Petits Ruminants Variant 5,"Abortion, Lesions, Swelling","Chickens, Ducks",Low,Chronic,Incurable
+Actinobacillosis Variant 5,"Drooling, Paralysis, Vomiting","Dogs, Cats",Moderate,Acute,Curable
+Botulism Variant 5,"Inflammation, Nasal Discharge, Respiratory distress","Horses, Turkeys",High,Months,Incurable
