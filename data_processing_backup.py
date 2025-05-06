@@ -1,3 +1,4 @@
+# data_processing.py temporar - doar pentru regenerare
 import pandas as pd
 
 data = {
@@ -35,10 +36,5 @@ data = {
 }
 
 df = pd.DataFrame(data)
-
-df['Symptoms'] = df['Symptoms'].str.lower().str.replace(r'\s+', ' ', regex=True)
-
-
-df.to_csv('livestock_disease.csv', index=False, sep=',')
-
-df.head()
+df.to_csv('livestock_disease.csv', index=False)
+print("✅ Fișierul CSV a fost regenerat corect.")
