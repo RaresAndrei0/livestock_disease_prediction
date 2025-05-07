@@ -56,4 +56,4 @@ def save(model,history):
 if __name__ == '__main__':
     
     df_encoded = pd.read_csv("dataset/feature_engineered_dataset.csv")
-    test_and_train(df_encoded)
+    test_and_train(df_encoded,False)
