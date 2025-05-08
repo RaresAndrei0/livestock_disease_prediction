@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studies - Gene Editing Research</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        .study-card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            background: #ffffff;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+        }
+        
+        li a:hover {
+            background-color: #e16028;
+        }
+
+        .study-card img {
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .study-card-body {
+            padding: 15px;
+        }
+
+        .study-card-body h5 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .study-card-body p {
+            color: #6c757d;
+            font-size: 1rem;
+        }
+        
+         .study-card:hover {
+            box-shadow: 10px 10px 20px rgba(225, 96, 40, 1);
+        }
+
+        .section-header {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .faq-item {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+      cursor: pointer;
+    }
+
+    .faq-question {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+      color: #2d4a34;
+    }
+
+    .faq-answer {
+      display: none;
+      margin-top: 8px;
+      line-height: 1.6;
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+
+    .faq-item:hover .faq-question {
+      color: #e16028 ;
+    }
+        
+    footer {
+            background-color: #e16028;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        
+  </style>
+</head>
+<body>
+ 
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="HomepageLivestock.html">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AI Prediction.html">AI Prediction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Diseases.html">Diseases</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+  <div class="container">
+    <h1>Frequently Asked Questions (FAQ)</h1>
+
+    <div class="faq-item">
+      <div class="faq-question">What is this AI system for?</div>
+      <div class="faq-answer">This AI system helps predict livestock diseases based on symptoms you observe. It suggests possible conditions and provides details like severity, duration, curability, and affected animal types.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How accurate are the predictions?</div>
+      <div class="faq-answer">Predictions are generated using a real-world dataset of known diseases and symptoms. While the system offers helpful insights, it should not replace consultation with a licensed veterinarian.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How do I use the system?</div>
+      <div class="faq-answer">Select the type of livestock and mark the symptoms shown. You can also describe additional symptoms in a text box. Once submitted, the system predicts the likely disease and displays relevant information.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I use this system for any type of livestock?</div>
+      <div class="faq-answer">Yes. The system supports multiple livestock types including cattle, goats, sheep, pigs, poultry, and horses. Results are specific to the selected animal type.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What if my animal has symptoms that aren’t listed?</div>
+      <div class="faq-answer">You can manually describe unlisted symptoms in the "Other symptoms" field. The system will still use the provided data to make the best possible prediction.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How can I be sure the results are reliable?</div>
+      <div class="faq-answer">The system uses machine learning trained on real disease-symptom relationships. It is intended as a decision-support tool, not a substitute for professional veterinary advice.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I trust the system to provide treatment recommendations?</div>
+      <div class="faq-answer">No. While it may provide curability information, it does not give specific treatments. Always consult a veterinarian for appropriate care plans.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How can I contact support if I have more questions?</div>
+      <div class="faq-answer">Please reach out via the contact form on our website or email us at [insert email here]. We’re here to help.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Is the data I enter kept private?</div>
+      <div class="faq-answer">Yes. Any data you submit is used solely for prediction purposes and is never shared with third parties. Your privacy is important to us.</div>
+    </div>
+  </div>
+  
+  <script>
+    // Toggle FAQ answer visibility
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('open');
+      });
+    });
+  </script>
+  
+  <footer>
+        <p>&copy; 2025 AI for Disease Prediction in Livestock 1222EEA. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
