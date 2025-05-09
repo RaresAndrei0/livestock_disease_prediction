@@ -1,69 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Disease Predictor</title>
+    <title>AI for Disease Prediction in Livestock</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
     <style>
+        .prediction-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .input-group input,
+        .input-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-group input:focus,
+        .input-group select:focus {
+            outline: none;
+            border-color: #e16028;
+            box-shadow: 0 0 0 3px rgba(225, 96, 40, 0.1);
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #result {
+            margin-top: 25px;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .result-success {
+            background-color: #dcfce7;
+            color: #166534;
+            border: 2px solid #22c55e;
+        }
+
+        .result-error {
+            background-color: #fee2e2;
+            color: #991b1b;
+            border: 2px solid #ef4444;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            background-color: #f8f9fa;
         }
-        .input-group {
-            margin-bottom: 15px;
-        }
-        input, select {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
+
+        .hero {
+            background: url('https://thumbs.dreamstime.com/b/virus-outbreak-spread-pandemic-around-world-map-vector-illustration-69024195.jpg') no-repeat center center;
+            background-size: cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
-            border: none;
-            cursor: pointer;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+            font-family: ADLaM Display;
         }
-        #result {
+
+        .hero h1 {
+            font-size: 4rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .features {
+            padding: 50px 15px;
+            background-color: #ffffff;
+        }
+
+        .features h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .features .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+        
+        .features .card:hover {
+            box-shadow: 10px 10px 20px rgba(225, 96, 40, 1);
+        }
+        
+        li a:hover {
+            background-color: #e16028;
+        }
+        
+        .orange-button {
+      background-color: #f97316; /* Tailwind-style orange */
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .orange-button:hover {
+      background-color: #ea580c; /* Darker orange on hover */
+    }
+
+        footer {
+            background-color: #e16028;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
             margin-top: 20px;
-            padding: 15px;
-            border-radius: 5px;
         }
     </style>
 </head>
+
+
 <body>
-    <h1>Animal Disease Predictor</h1>
-    
-    <div class="input-group">
-        <label>Age:</label>
-        <input type="number" id="age" step="0.1" required>
-    </div>
-
-    <div class="input-group">
-        <label>Temperature (°F):</label>
-        <input type="number" id="temperature" step="0.1" required>
-    </div>
-
-    <div class="input-group">
-        <label>Animal:</label>
-        <select id="animal">
-            <option value="cow">Cow</option>
-            <option value="goat">Goat</option>
-            <option value="sheep">Sheep</option>
-            <option value="buffalo">Buffalo</option>
-        </select>
-    </div>
-
-    <div class="input-group">
-        <label>Other Symptoms (comma-separated):</label>
-        <input type="text" id="symptoms" placeholder="e.g., fever, cough">
-    </div>
-
-    <button onclick="predictDisease()">Predict Disease</button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('home') }}">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('diseases') }}">Diseases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('faq') }}">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<body>
     
     <div id="result"></div>
+     <div class="prediction-container">
+        <div class="form-header">
+            <h2>Animal Disease Prediction</h2>
+            <p class="text-muted">Enter the animal's details to get diagnosis prediction</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" step="0.1" required class="form-control">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="input-group">
+                    <label for="temperature">Temperature (°F)</label>
+                    <input type="number" id="temperature" step="0.1" required class="form-control">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="input-group">
+                    <label for="animal">Animal Type</label>
+                    <select id="animal" class="form-select">
+                        <option value="cow">Cow</option>
+                        <option value="goat">Goat</option>
+                        <option value="sheep">Sheep</option>
+                        <option value="buffalo">Buffalo</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="input-group">
+                    <label for="symptoms">Symptoms (comma-separated)</label>
+                    <input type="text" id="symptoms" placeholder="e.g., fever, cough" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button onclick="predictDisease()" class="orange-button w-100">
+                Predict Disease
+            </button>
+        </div>
+
+        <div id="result" class="result-placeholder"></div>
+    </div>
 
     <script>
         async function predictDisease() {

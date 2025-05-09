@@ -20,7 +20,23 @@ all_features = list(X.columns)
 
 @app.route('/')
 def home():
+    return render_template('HomepageLivestock.html')
+
+@app.route('/index')
+def index():
     return render_template('index.html')
+
+@app.route('/diseases')
+def diseases():
+    return render_template('Diseases.html')
+
+@app.route('/faq')
+def faq():
+    return render_template("FAQ.html")
+
+@app.route('/about')
+def about():
+    return render_template("About.html")
 
 @app.route('/predict', methods=['POST'])
 def predict():
