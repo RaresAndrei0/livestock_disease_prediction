@@ -24,18 +24,18 @@ label_map = {int(k): v for k, v in label_map.items()}
 all_features = list(X.columns)
 
 while True:
-    print("\n🔥 Testare model AI cu date introduse manual:")
+    print("\n Testare model AI cu date introduse manual:")
     try:
-        age = float(input("🧬 Introduceți vârsta animalului: "))
-        temp = float(input("🌡️  Introduceți temperatura (Fahrenheit): "))
-        animal = input("🐄 Alegeți animalul (cow, goat, sheep, buffalo): ").strip().lower()
-        symptoms = input("💉 Introduceți simptome separate prin virgulă: ").strip().lower().split(",")
+        age = float(input(" Introduceți vârsta animalului: "))
+        temp = float(input(" Introduceți temperatura (Fahrenheit): "))
+        animal = input(" Alegeți animalul (cow, goat, sheep, buffalo): ").strip().lower()
+        symptoms = input(" Introduceți simptome separate prin virgulă: ").strip().lower().split(",")
 
         symptoms = [s.strip() for s in symptoms]
         animal_col = f"Animal_{animal}"
 
         if animal_col not in all_features:
-            print(f"⚠️ Animal invalid: {animal}")
+            print(f" Animal invalid: {animal}")
             continue
 
         # Build input vector
@@ -54,7 +54,7 @@ while True:
         prediction = model.predict(input_scaled)
         predicted_class = np.argmax(prediction, axis=1)[0]
 
-        print(f"\n✅ Predicție: {label_map[predicted_class]}")
+        print(f"\nPredicție: {label_map[predicted_class]}")
 
     except Exception as e:
-        print(f"⚠️ Eroare: {e}")
+        print(f"Eroare: {e}")
